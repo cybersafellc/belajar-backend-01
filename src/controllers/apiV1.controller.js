@@ -9,6 +9,7 @@ export const detailRequest = async (req, res) => {
       query: req.query,
       params: req.params,
     };
+    // logger.error("error testing"); testing error
     return responses(200, "successfuly response", data, res);
   } catch (error) {
     console.log(error);
